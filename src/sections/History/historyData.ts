@@ -1,0 +1,27 @@
+// Sample historical events data
+export const events = [
+  { year: 33, event: "Pentecost - Birth of the Church", category: "foundational", details: "The Holy Spirit descends upon the disciples, empowering them to spread the Gospel." },
+  { year: 49, event: "Council of Jerusalem", category: "council", details: "First Church council addressing the question of Gentile converts and Mosaic Law." },
+  { year: 64, event: "Persecution under Nero", category: "persecution", details: "First major Roman persecution of Christians, possible martyrdom of Peter and Paul." },
+  { year: 313, event: "Edict of Milan", category: "imperial", details: "Emperor Constantine grants tolerance to Christianity, ending widespread persecution." },
+  { year: 325, event: "First Council of Nicaea", category: "council", details: "Defined Christ's divinity against Arianism, formulated Nicene Creed." },
+  { year: 381, event: "First Council of Constantinople", category: "council", details: "Affirmed divinity of the Holy Spirit, completed Nicene-Constantinopolitan Creed." },
+  { year: 431, event: "Council of Ephesus", category: "council", details: "Declared Mary as Theotokos (God-bearer) against Nestorianism." },
+  { year: 451, event: "Council of Chalcedon", category: "council", details: "Defined Christ's two natures (divine and human) - hypostatic union." },
+  { year: 590, event: "Pope Gregory I (the Great) begins reign", category: "papal", details: "Major influence on liturgy (Gregorian Chant), administration, and missions." },
+  { year: 800, event: "Charlemagne crowned Holy Roman Emperor", category: "imperial", details: "Pope Leo III crowns Charlemagne, linking papal authority with temporal power." },
+  { year: 1054, event: "East-West Schism", category: "schism", details: "Formal separation between the Roman Catholic and Eastern Orthodox Churches." },
+  { year: 1095, event: "First Crusade called", category: "conflict", details: "Pope Urban II calls for military expedition to recapture the Holy Land." },
+  { year: 1215, event: "Fourth Lateran Council", category: "council", details: "Defined transubstantiation, mandated annual confession and communion." },
+  { year: 1309, event: "Avignon Papacy begins", category: "papal", details: "Popes reside in Avignon, France, leading to perceptions of French dominance." },
+  { year: 1378, event: "Western Schism begins", category: "schism", details: "Period with multiple rival popes (Rome, Avignon, later Pisa)." },
+  { year: 1414, event: "Council of Constance", category: "council", details: "Ended the Western Schism, condemned Jan Hus." },
+  { year: 1517, event: "Protestant Reformation begins", category: "schism", details: "Martin Luther posts his 95 Theses, challenging indulgences and papal authority." },
+  { year: 1545, event: "Council of Trent begins", category: "council", details: "Catholic Church's response to the Reformation (Counter-Reformation)." },
+  { year: 1854, event: "Dogma of Immaculate Conception defined", category: "dogma", details: "Pope Pius IX infallibly defines Mary's conception without original sin." },
+  { year: 1869, event: "First Vatican Council", category: "council", details: "Defined papal infallibility under specific conditions." },
+  { year: 1950, event: "Dogma of Assumption of Mary defined", category: "dogma", details: "Pope Pius XII infallibly defines Mary's bodily assumption into heaven." },
+  { year: 1962, event: "Second Vatican Council (Vatican II) begins", category: "council", details: "Major council addressing the Church's relationship with the modern world." },
+  { year: 2000, event: "Great Jubilee Year", category: "celebration", details: "Pope John Paul II leads Church into third millennium with focus on reconciliation." },
+  { year: 2013, event: "Pope Francis elected", category: "papal", details: "First Jesuit pope, first from the Americas, emphasizing mercy and outreach." }
+];
