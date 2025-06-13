@@ -1,9 +1,10 @@
 import React from "react";
 import InfoSection from "../../components/ui/InfoSection";
 import CommentaryQuote from "../../components/ui/CommentaryQuote";
+import type { Doctrine } from "../../types";
 
 interface DoctrineDetailProps {
-  doctrine: any;
+  doctrine: Doctrine | undefined;
   onBack: () => void;
 }
 

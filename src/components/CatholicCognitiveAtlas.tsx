@@ -14,7 +14,6 @@ export default function CatholicCognitiveAtlas() {
   const [activeBook, setActiveBook] = useState(null);
   const [activeDoctrine, setActiveDoctrine] = useState(null);
   const [timelinePosition, setTimelinePosition] = useState(500); // Default year for timeline
-  const [activeRosaryBead, setActiveRosaryBead] = useState(null);
   const [expandedArtwork, setExpandedArtwork] = useState(null);
 
   // Handle section navigation
@@ -23,7 +22,6 @@ export default function CatholicCognitiveAtlas() {
     // Reset sub-selections when changing main sections to avoid stale state
     setActiveBook(null);
     setActiveDoctrine(null);
-    setActiveRosaryBead(null);
     setExpandedArtwork(null);
   };
 
@@ -55,17 +53,9 @@ export default function CatholicCognitiveAtlas() {
               setPosition={setTimelinePosition}
             />
           )}
-          {activeSection === "liturgy" && (
-            <LiturgicalSystem
-              activeRosaryBead={activeRosaryBead}
-              setActiveRosaryBead={setActiveRosaryBead}
-            />
-          )}
+          {activeSection === "liturgy" && <LiturgicalSystem />}
           {activeSection === "culture" && (
-            <CulturalImpact
-              expandedArtwork={expandedArtwork}
-              setExpandedArtwork={setExpandedArtwork}
-            />
+            <CulturalImpact setExpandedArtwork={setExpandedArtwork} />
           )}
         </div>
       </main>

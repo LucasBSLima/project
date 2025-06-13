@@ -1,12 +1,12 @@
 import React from "react";
 import { culturalItems } from "./cultureData";
+import type { CulturalItem } from "../../types";
 
 interface CulturalImpactProps {
-  expandedArtwork: any;
-  setExpandedArtwork: (artwork: any) => void;
+  setExpandedArtwork: (artwork: CulturalItem) => void;
 }
 
-const CulturalImpact: React.FC<CulturalImpactProps> = ({ expandedArtwork, setExpandedArtwork }) => {
+const CulturalImpact: React.FC<CulturalImpactProps> = ({ setExpandedArtwork }) => {
   return (
     <div className="pb-8">
       <h2 className="text-2xl md:text-3xl font-serif mb-6 text-center text-indigo-900">
