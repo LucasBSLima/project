@@ -5,12 +5,7 @@ import ChurchArchitecture from "./ChurchArchitecture";
 import RosaryVisualizer from "./RosaryVisualizer";
 import SacramentalSystem from "./SacramentalSystem";
 
-interface LiturgicalSystemProps {
-  activeRosaryBead: number | null;
-  setActiveRosaryBead: (bead: number | null) => void;
-}
-
-const LiturgicalSystem: React.FC<LiturgicalSystemProps> = ({ activeRosaryBead, setActiveRosaryBead }) => {
+const LiturgicalSystem: React.FC = () => {
   const [activeTab, setActiveTab] = useState("calendar"); // Default to calendar view
 
   return (
@@ -30,12 +25,7 @@ const LiturgicalSystem: React.FC<LiturgicalSystemProps> = ({ activeRosaryBead, s
       {/* Content based on active tab */}
       {activeTab === "calendar" && <LiturgicalCalendar />}
       {activeTab === "architecture" && <ChurchArchitecture />}
-      {activeTab === "rosary" && (
-        <RosaryVisualizer
-          activeRosaryBead={activeRosaryBead}
-          setActiveRosaryBead={setActiveRosaryBead}
-        />
-      )}
+      {activeTab === "rosary" && <RosaryVisualizer />}
       {activeTab === "sacraments" && <SacramentalSystem />}
     </div>
   );

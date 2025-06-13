@@ -2,10 +2,11 @@ import React from "react";
 import CommentaryQuote from "../../components/ui/CommentaryQuote";
 import ExpandableSection from "../../components/ui/ExpandableSection";
 import InfoSection from "../../components/ui/InfoSection";
+import type { BookInfo } from "../../types";
 
 interface BookDetailProps {
   book: string;
-  info: any;
+  info: BookInfo | undefined;
   onBack: () => void;
   expandedSection: string | null;
   toggleSection: (section: string) => void;

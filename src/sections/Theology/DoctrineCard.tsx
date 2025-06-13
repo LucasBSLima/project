@@ -1,7 +1,8 @@
 import React from "react";
+import type { Doctrine } from "../../types";
 
 interface DoctrineCardProps {
-  doctrine: any;
+  doctrine: Doctrine;
   onClick: () => void;
 }
 

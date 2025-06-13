@@ -1,8 +1,9 @@
 import React from "react";
 import { nodePositions } from "./theologyData";
+import type { Doctrine } from "../../types";
 
 interface TheologyTreeProps {
-  doctrines: any[];
+  doctrines: Doctrine[];
   setActiveDoctrine: (id: string) => void;
 }
 

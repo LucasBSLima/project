@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import RosarySVG from "./RosarySVG";
 import { mysteries } from "./liturgyData";
 
-interface RosaryVisualizerProps {
-  activeRosaryBead: number | null;
-  setActiveRosaryBead: (bead: number | null) => void;
-}
-
-const RosaryVisualizer: React.FC<RosaryVisualizerProps> = ({ activeRosaryBead, setActiveRosaryBead }) => {
+const RosaryVisualizer: React.FC = () => {
   const [selectedMysterySet, setSelectedMysterySet] = useState("joyful");
   const [currentMysteryIndex, setCurrentMysteryIndex] = useState(0);
 

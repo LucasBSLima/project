@@ -1,7 +1,8 @@
 import React from "react";
+import type { CulturalItem } from "../../types";
 
 interface ArtworkModalProps {
-  artwork: any;
+  artwork: CulturalItem;
   onClose: () => void;
 }
 
