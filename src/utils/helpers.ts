@@ -1,4 +1,5 @@
-// Helper function for polar to cartesian conversion (used in Rosary & Calendar)
+// Helper function for polar to cartesian conversion used by the RosarySVG
+// and LiturgicalCalendar components
 export function polarToCartesian(centerX: number, centerY: number, radius: number, angleInDegrees: number) {
   const angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180.0;
   return {
